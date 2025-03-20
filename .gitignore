@@ -1,8 +1,9 @@
 # Created by https://www.toptal.com/developers/gitignore/api/visualstudiocode,python
 # Edit at https://www.toptal.com/developers/gitignore?templates=visualstudiocode,python
 
-# Ignore everything in the data folder
+# Ignore data and model weights
 data/*
+models/*
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
