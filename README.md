@@ -26,3 +26,19 @@ Download the Dataset
 kaggle datasets download -d masoudnickparvar/brain-tumor-mri-dataset --unzip -p ./data
 
 ```
+
+## Results
+| Metric         | Value  |
+|---------------|--------|
+| Test Accuracy | 0.9741 |
+| Test AUC      | 0.9986 |
+
+**Confusion Matrix**
+|                | Glioma | Meningioma | No Tumor | Pituitary |
+|--------------|--------|-----------|----------|-----------|
+| **Glioma**      | 280    | 19        | 0        | 1         |
+| **Meningioma**  | 1      | 298       | 5        | 2         |
+| **No Tumor**    | 0      | 1         | 404      | 0         |
+| **Pituitary**   | 1      | 4         | 0        | 295       |
+
+![Saliency Map](images/saliency.png)
